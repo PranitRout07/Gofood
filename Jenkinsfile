@@ -3,26 +3,7 @@ pipeline {
     agent any
     
     stages {
-        // stage('Fetch code') {
-        //     steps {
-        //         git branch: 'main', url: 'https://github.com/PranitRout07/Gofood.git'
-        //     }
-        // }
-        // stage('Code Analysis') {
-        //     environment {
-        //         scannerHome = tool 'sonar4.7'
-        //     }
-        //     steps {
-        //           withSonarQubeEnv('sonar') {
-        //               bat '%scannerHome%\\bin\\sonar-scanner -Dsonar.projectKey=gofood ' +
-        //                 '-Dsonar.projectName=gofood ' +
-        //                 '-Dsonar.projectVersion=1.0 ' +
-        //                 '-Dsonar.sources=. '
-               
-        //       }
-        //     }
 
-        // }
         stage('Build Docker Images'){
             steps{
                 
