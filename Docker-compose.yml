@@ -17,7 +17,7 @@ services:
     networks:
       - mern-network
   frontend:
-    image: pranit007/todo-frontend:latest
+    image: pranit007/gofood-frontend:latest
     ports:
       - "3000:3000"
     networks:
